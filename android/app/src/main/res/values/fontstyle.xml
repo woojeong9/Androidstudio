@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="commontext">
+        <item name="android:text">텍스트뷰 </item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+    <style name="commontext_1" parent="commontext">
+        <item name="android:text">텍스트뷰 상속</item>
+    </style>
+</resources>
