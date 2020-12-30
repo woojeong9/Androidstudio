@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movie2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Movie2">
+        <activity android:name=".Forky"></activity>
+        <activity android:name=".Hamm" />
+        <activity android:name=".Slinky" />
+        <activity android:name=".Alien" />
+        <activity android:name=".Buzz" />
+        <activity android:name=".Jessie" />
+        <activity android:name=".Woody" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
