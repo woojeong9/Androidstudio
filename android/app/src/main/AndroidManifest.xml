@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Intent2"></activity>
-        <activity android:name=".Intent1" />
-
-        <activity android:name=".MainActivity" >
+        <activity android:name=".TodolistEx"></activity>
+        <activity android:name=".TV">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity2">
-
-        </activity>
-
+        <activity android:name=".Account1" />
+        <activity android:name=".Account"></activity>
+        <activity android:name=".Calculate" />
+        <activity android:name=".Intent2" />
+        <activity android:name=".Intent1" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
     </application>
 
 </manifest>
