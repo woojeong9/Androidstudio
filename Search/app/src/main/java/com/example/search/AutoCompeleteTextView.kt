@@ -10,13 +10,12 @@ import com.example.search.databinding.AutocompeleteDataBinding
 class AutoCompeleteTextView : AppCompatActivity() {
 
     private lateinit var binding: AutocompeleteDataBinding
-    private lateinit var binding2: ActivityAutoCompeleteTextViewBinding
-    val wordList= mutableListOf<String>()
+
+    var wordList= mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= AutocompeleteDataBinding.inflate(layoutInflater)
-        binding2= ActivityAutoCompeleteTextViewBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)
 
@@ -26,6 +25,7 @@ class AutoCompeleteTextView : AppCompatActivity() {
             wordList.add(binding.enrollInput.text.toString())
             val adapter= ArrayAdapter<String>(this,
                     android.R.layout.simple_dropdown_item_1line,wordList)
+            //문자열을 보여주는 리스트 역할
             binding.searchBar.autoTv.setAdapter(adapter)
 
             binding.enrollInput.setText("")
