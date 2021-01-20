@@ -1,5 +1,6 @@
 package com.example.search
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -12,6 +13,7 @@ class AutoCompeleteTextView : AppCompatActivity() {
     private lateinit var binding: AutocompeleteDataBinding
 
     var wordList= mutableListOf<String>()
+    val SP_NAME="my_sp_storage"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,5 +45,12 @@ class AutoCompeleteTextView : AppCompatActivity() {
             binding.searchBar.autoTv.setText("")
         }
 
+    }
+
+    fun WriteSharedPreference(key:String, value:Int){
+        val sp=getSharedPreferences(SP_NAME, Context.MODE_PRIVATE)
+        val editor=sp.edit()
+        editor.putInt(key,value)
+        editor.apply()
     }
 }
