@@ -15,9 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.randomBtn.setOnClickListener{
             val intent=Intent(this@MainActivity,Random::class.java)
+            startActivity(intent)
         }
         binding.conanBtn.setOnClickListener{
             val intent=Intent(this@MainActivity,Conan::class.java)
+            startActivity(intent)
         }
 
 

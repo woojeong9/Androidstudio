@@ -30,7 +30,7 @@ class Sqlitehelper(context: Context, name:String, version: Int)
         values.put("content",memo.content)
         values.put("datatime",memo.datetime)
         //         컬럼명      값
-        wd.insert(memo, null, values)
+        wd.insert("memo", null, values)
             // 테이블 이름                    값
         //db에 넣음
         wd.close()
